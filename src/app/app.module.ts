@@ -3,9 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { environment } from '../environments/environment';
 import { SocketIoModule, SocketIoConfig } from 'ngx-socket-io';
-//const config: SocketIoConfig = { url: environment.apiUrl, options: {} };
-const config: SocketIoConfig = { url: 'https://www.place-my-order.com/api', options: {} };
-
+const config: SocketIoConfig = { url: environment.apiUrl, options: {} };
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
